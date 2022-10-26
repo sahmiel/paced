@@ -28,7 +28,17 @@ int main()
     {
         val = atoi(card_code);
     }
+// check if the value is 3 to 6
 
+if (val >=2 && val <=6 )
+{
+    puts("Count has gone up");
+}
+// check if the card was 10, J, Q, or K
+else if(val == 10)
+{
+    puts("Count has gone down");
+}
     printf("The card value is: %d\n", val);
     return 0;
 }
